@@ -9,9 +9,7 @@ node {
    // -- Configura variables
    echo 'Configurando variables'
    def mvnHome = tool 'M3'
-   def gitHome = "C:/Users/jvlopez/AppData/Local/Programs/Git/bin"
    env.PATH = "${mvnHome}/bin:${env.PATH}"
-   env.PATH = "${gitHome}:${env.PATH}"
    echo "var mvnHome='${mvnHome}'"
    echo "var env.PATH='${env.PATH}'"
    
